@@ -1,6 +1,6 @@
 FROM ubuntu:24.04 AS base
 
-ARG USERNAME=ubuntu
+ENV USERNAME=ubuntu
 
 # Configure apt
 ENV DEBIAN_FRONTEND=noninteractive
