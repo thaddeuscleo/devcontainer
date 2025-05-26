@@ -17,7 +17,7 @@ RUN curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install
 
 # Install PHP dependencies
 RUN add-apt-repository -y ppa:ondrej/php
-RUN apt install -y php5.6 php8.2 php7.4
+RUN apt install -y php5.6 php8.2 php7.4 php5.6-mysqli
 
 # # Composer 2.3.7
 RUN curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer --version=2.3.7
